@@ -34,7 +34,7 @@ import com.richie.caipiao.vo.CaipiaoVo;
 public class Caipiao3ListUI extends JPanel implements ActionListener {
 
 	/**
-	 * 测试提交
+	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 	private static String httpUrl ="http://kaijiang.zhcw.com/zhcw/inc/ssq/ssq_wqhg.jsp?pageNum=1";
@@ -51,21 +51,21 @@ public class Caipiao3ListUI extends JPanel implements ActionListener {
 
 	public JButton getGenBtn() {
 		if (genBtn == null) {
-			genBtn = new JButton("��ѯ");
+			genBtn = new JButton("查询");
 		}
 		return genBtn;
 	}
 
 	public JButton getClearBtn() {
 		if (clearBtn == null) {
-			clearBtn = new JButton("��������");
+			clearBtn = new JButton("下载数据");
 		}
 		return clearBtn;
 	}
 
 	public JRadioButton getCheckBox1() {
 		if (radio1 == null) {
-			radio1 = new JRadioButton("50��", true);
+			radio1 = new JRadioButton("50期", true);
 			radio1.setSelected(true);
 		}
 		return radio1;
@@ -73,7 +73,7 @@ public class Caipiao3ListUI extends JPanel implements ActionListener {
 
 	public JRadioButton getCheckBox2() {
 		if (radio2 == null) {
-			radio2 = new JRadioButton("100��", true);
+			radio2 = new JRadioButton("100期", true);
 			radio2.setSelected(true);
 		}
 		return radio2;
@@ -81,7 +81,7 @@ public class Caipiao3ListUI extends JPanel implements ActionListener {
 
 	public JRadioButton getCheckBox3() {
 		if (radio3 == null) {
-			radio3 = new JRadioButton("150��", true);
+			radio3 = new JRadioButton("150期", true);
 			radio3.setSelected(true);
 		}
 		return radio3;
@@ -111,7 +111,7 @@ public class Caipiao3ListUI extends JPanel implements ActionListener {
 								row, col).getPreferredSize().getWidth();
 				width = Math.max(width, preferedWidth);
 			}
-			header.setResizingColumn(column); // ���к���Ҫ118
+			header.setResizingColumn(column); // 此行很重要118
 			if(col == 0){
 				column.setWidth(78);
 			}else if(col ==1){
@@ -143,7 +143,7 @@ public class Caipiao3ListUI extends JPanel implements ActionListener {
 									row, col).getPreferredSize().getWidth();
 					width = Math.max(width, preferedWidth);
 				}
-				header.setResizingColumn(column); // ���к���Ҫ118
+				header.setResizingColumn(column); // 此行很重要118
 				if(col == 0){
 					column.setWidth(79);
 				}else if(col ==1){
